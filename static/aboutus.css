@@ -1,0 +1,232 @@
+body {
+    background-color: black;
+    padding: 20px;
+}
+.content
+{
+    padding: 110px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    border-radius: 30px ;
+    border-width: 10px;
+    margin: 50px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/static/img/starz.jpg');
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.fa.fa-home{
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: blanchedalmond;
+    background-color: black;
+    transform: translate(300px, 0px);
+}
+/* Footer */
+.footer {
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.abs {
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.h-8 {
+    width: 50px;
+    height: 50px;
+    color: blanchedalmond;
+    transform: translate(0px, -53px);
+}
+.h-7 {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transform: translate(-35px, -27px);
+
+}
+.foot_img_link {
+    color: black;
+}
+.container {
+    padding-bottom: 50px;
+}
+.foot_link {
+    font-size: 25px;
+    color: blueviolet;
+}
+h4 {
+    font-size: 30px;
+}
+.btn {
+    background-color: black;
+}
+.slide_pic
+{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text, .numbertext
+{
+    color: blanchedalmond;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.page
+{
+    display: flex;
+    justify-content: space-between;
+}
+.heading
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-bottom: 100px;
+    border-style: double;
+    border-width: 20px;
+    border-color: blanchedalmond;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px;
+}
+.para
+{
+    background-color: black;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    width: 300px;
+    margin:auto;
+    color: blanchedalmond;
+    width: 1000px;
+    padding: 50px;
+    font-size: .7cm;
+}
+
+.side
+{
+    height: 590px;
+}
+.links
+{
+    background-color: black;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    margin:auto;
+    color: blanchedalmond;
+    width: 1300px;
+    font-size: .7cm;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.link{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.ms{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.user{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+
+.tut{
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: blanchedalmond;
+    font-size: 20px;
+    transform: translate(0px, 5px);
+
+}
+.shop{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+
+.usetot{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    color: blanchedalmond;
+    width: fit-content;
+    height: 35px;
+    padding: 15px;
+    display: flex;
+}
+
+.bel{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.nifti{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+    border-width: 5px;
+    width: 200px;
+    height: 70px;
+    padding: 7px;
+}
+.buymodel{
+    transform: translate(0px, 35px);
+}
+.aboutus {
+    transform: translate(0px, 35px)
+}
+.here {
+    color: blanchedalmond;
+}

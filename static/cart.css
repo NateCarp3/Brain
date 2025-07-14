@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    padding: 20px;
+}
+.container
+{
+    padding: 110px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    border-radius: 30px ;
+    border-width: 10px;
+    margin: 50px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/static/img/starz.jpg');
+}
+.heading
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-bottom: 100px;
+    border-style: double;
+    border-width: 20px;
+    border-color: blanchedalmond;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px;
+}
+.fa.fa-home{
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: blanchedalmond;
+    background-color: black;
+    transform: translate(300px, 0px);
+}
+.cart_info{
+    display: flex;
+}
+.cart_brains {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 7px groove blanchedalmond;
+    padding: 20px;
+    margin: 20px;
+}
+.header {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 7px groove blanchedalmond;
+    padding: 20px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.delete {
+    display: block;
+}
+.intro {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 7px groove blanchedalmond;
+    padding: 20px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.checkout {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 7px groove blanchedalmond;
+    padding: 20px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.quant {
+    width: fit-content;
+}

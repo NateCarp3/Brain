@@ -1,0 +1,176 @@
+.bod
+{
+    padding: 110px;
+    background-color: blanchedalmond;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 30px ;
+    border-width: 10px;
+    margin: 50px;
+    background-image: url('/static/img/starz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-bottom: 100px;
+    border-style: double;
+    border-width: 20px;
+    border-color: blue;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: black;
+    color: blue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px;
+}
+.mat
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.col
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.inf
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.bm
+{
+    width: 300px;
+}
+.phases
+{
+    border-style: inset;
+    background-color: black;
+    border-width: 10px;
+    border-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.toprow
+{
+    display: flex;
+}
+.tableHead
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+.tab
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.table
+{
+    margin-bottom: 50px;
+}
+.r1
+{
+    padding: 10px;
+    margin-left: 10px;
+}
+#check
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    font-size: 15px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    height: fit-content;
+    margin: 65px 620px;
+    height: 70px;
+    width: 100px;
+}
+.quant
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    height: fit-content;
+    transform: translate(570px, 60px);
+}
+.uni
+{
+    width: 100px;
+}
+#phrozen
+{
+    width: 300px;
+    margin-top: 100px;
+}
+#flash
+{
+    width: 300px;
+    margin-top: 100px;
+}
+.secondrow
+{
+    display: flex;
+    justify-content: space-between;
+}
+.table
+{
+    left: 100px;
+    margin-top: 125px;
+}
+select
+{
+    text-align-last: center;
+    direction: ltr;
+}
+
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='abs.css') }}">
+    <title>Automatic Brain Segmentation</title>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+        <!--Title of the website-->
+            <p class="heading"> Automatic Brain Segmentation</p>
+                {%if 'user_id' in session%}
+                    <a id="logout" class="check" href="/logout">Logout</a>
+                    {%else%}
+                        <a id="start" class="check" href="/createaccount">Get Started</a>
+                {%endif%}
+        </div>
+
+        <div class="bel">
+            <div class="nifti">
+                <label class="lab">Upload .NIFTI File </label>
+                <a class="here" href="https://drive.google.com/drive/folders/1lGyGDTjAeul9Q9uzqi_S9wUjp4TjOcxP?usp=sharing">
+                    HERE
+                </a>
+            </div>
+            <div class="buymodel">
+                <a href="/buyModel" class="link">BUY MODEL</a>
+            </div>
+            <div class="aboutus">
+                <a href= "/aboutus" class="ms">ABOUT US</a>
+            </div>
+            <div class="usetot">
+                <a href="/login"></a>
+                <img src="{{url_for('static', filename='img/user.jpg')}}" alt="" class="user">
+                {%if user|length != 0%}
+                    <a href="/show_user/{{session.user_id}}" class="tut">{{user[0].first_name}}</a>
+                {%endif%}
+                <img src="{{url_for('static', filename='img/shop.jpg')}}" alt="" class="shop">
+                <a href="/cart"class="tut">Cart</a>
+            </div>
+        </div>
+        <div class="undernav">
+            <div class="super_brain">
+                <div class="title_subtitle">
+                    <div class="tit">
+                        3D Printing Brains for Medical Research
+                    </div>
+                    <br>
+                    <div class="sub">
+                        Here at ABS we specialize in segmenting brain MRI images into 3D models. These models can be used by medical professionals to communicate upcoming procedures with their patient. 
+                    </div>
+                </div>
+                <div class="giffy">
+                    <img src="{{url_for('static', filename='img/super-brain.gif')}}"  alt="s1" id="superBrain">
+                </div>
+            </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/or.png')}}" class="slide_pic" alt="s1" id="s1">
+                    <br>
+                    <div class="text">Lattice Brain Model</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/wm.png')}}" class="slide_pic" alt="s2" id="s2">
+                    <br>
+                    <div class="text">White Matter Model</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/resin_pool.jpg')}}" class="slide_pic" alt="s1" id="s7">
+                    <br>
+                    <div class="text">Resin Printer</div><br>
+                </div>
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/white_printing.jpg')}}" class="slide_pic" alt="s1" id="s6">
+                    <br>
+                    <div class="text">White Printing Model</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/printingmodel.jpg')}}" class="slide_pic" alt="s3" id="s3">
+                    <br>
+                    <div class="text">Pink Printing Model</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/curingbrain.jpeg')}}" class="slide_pic" alt="s5" id="s5">
+                    <br>
+                    <div class="text">Curing Brain Model</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="{{url_for('static', filename='img/whitemodel.png')}}" class="slide_pic" alt="s4" id="s4">
+                    <br>
+                    <div class="text">White Resin Models</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#11164</a>
+                <a class="next" onclick="plusSlides(1)">&#11166</a>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+            </div>
+            <br>
+        </div>
+        <div class="why">
+            <div class="head1">
+                <h1>Why 3D Print The Brain?</h1>
+            </div>
+            <div class="list">
+                <ol>
+                    <li>Currently, residential training and surgical planning rely almost exclusively on 2-dimensional Magnetic Resonance Images (MRI).</li><br>
+                    <li>Surgical preparedness could be advanced with 3-dimensional models.</li><br>
+                    <li>3D Printed Brain Models can be used by doctors to communicate with patients about upcoming procedures</li><br>
+                    <li>3D printed models could inspire future generations of brain surgeons</li><br>
+                    <li>Can be used as a symbol for mental health</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+        <!--Flex Container-->
+    <div class="container">
+        <!--footer-->
+        <footer class="footer">
+        <!--Logo and social links container-->
+        <div class="row">
+            <!--Logo-->
+            <div>
+                <img src="{{url_for('static', filename='img/abs.png')}}" class="abs">
+            </div>
+            <div class="footer-col">
+                <h4>ABS</h4>
+                <ul>
+                    <li><a href="/" class="foot_link">Home</a></li>
+                    <li><a href="/buyModel" class="foot_link">Buy Model</a></li>
+                    <li><a href="/aboutus" class="foot_link">About Us</a></li>
+                    <li><a href="/createaccount" class="foot_link">Login/Registration</a></li>
+                    <li><a href="/cart" class="foot_link">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact_img">
+                    <li>
+                        <a href="#" class="foot_img_link">
+                        <img src="{{url_for('static', filename='img/youtube.jpg')}}" alt="" class="h-7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="foot_img_link">
+                            <img src="{{url_for('static', filename='img/twitter.jpg')}}" alt="" class="h-7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="foot_img_link">
+                            <img src="{{url_for('static', filename='img/instagram.png')}}" alt="" class="h-8">
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                <p class="nathan">Built and Designed by Nathan Carpenter</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#" class="foot_link">FAQ</a></li>
+                    <li><a href="#" class="foot_link">Shipping</a></li>
+                    <li><a href="#" class="foot_link">Returns</a></li>
+                    <li><a href="#" class="foot_link">Order Status</a></li>
+                    <li><a href="#" class="foot_link">Payment Options</a></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    </div>
+</body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
+</html>

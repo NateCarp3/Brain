@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cart.css') }}">
+    <title>Automatic Brain Segmentation</title>
+</head>
+<body>
+<div class="container">
+    <div class="heading">
+        <!--Title of the website-->
+        Cart
+        <a class="btn" href="/" >
+            <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+        </a>
+    </div>
+    <div class="intro">
+        <h2>{{cart.first_name}}'s Cart:</h2>
+        <a href="/buyModel">
+            Continue Shopping
+        </a>
+    </div>
+    {%if cart.brains|length == 0:%}
+    <p>Cart is Empty</p>
+    {%else%}
+    <div class="header">
+        Brain Models:
+    </div>
+    <div class="cart_info">
+        {%for brain in cart.brains%}
+        <div class="cart_brains">
+            <img src= {{brain.img_name}}>
+            <h3>Material: {{brain.material}}</h3>
+            <h3>Price ${{brain.price}}0</h3>
+            <h3>Color: {{brain.color}}</h3>
+            <h3>Quantity:</h3>
+            <input type="number" placeholder="{{brain.quantity}}" class="quant">
+            <br>
+            <a class="delete" href="/delete/{{brain.id}}">Delete Brain</a>
+        </div>
+        {%endfor%}
+    {%endif%}
+    </div>
+    <div class="checkout">
+        <a href="/">Check Out</a>
+    </div>
+
+</div>
+</body>
+</html>

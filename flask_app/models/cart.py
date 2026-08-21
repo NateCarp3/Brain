@@ -46,3 +46,9 @@ class Cart:
         query = "DELETE FROM cart WHERE brain_model_id = %(brain_model_id)s and user_id = %(user_id)s;"
         results = connectToMySQL('Brain_Schema').query_db(query, data)
         return results
+
+    @classmethod
+    def update_quantity(cls, data):
+        query = "UPDATE cart SET quantity = %(quantity)s WHERE brain_model_id = %(brain_model_id)s and user_id = %(user_id)s;"
+        results = connectToMySQL('Brain_Schema').query_db(query, data)
+        return results

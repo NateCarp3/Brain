@@ -99,5 +99,23 @@ body {
     margin-bottom: 50px;
 }
 .quant {
-    width: fit-content;
+    width: 70px;
+}
+.quant_form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.update_btn {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border: 3px groove blanchedalmond;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.update_btn:hover {
+    background-color: blanchedalmond;
+    color: black;
 }

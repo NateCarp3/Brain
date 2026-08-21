@@ -1,5 +1,5 @@
 from flask_app import app
-from flask import render_template, redirect, request, session
+from flask import render_template, redirect, request, session, flash
 from flask_app.models.brain import Brain
 from flask_app.models.user import User
 from flask_app.models.cart import Cart
@@ -33,4 +33,20 @@ def delete_brain(brain_model_id):
         'brain_model_id': brain_model_id
     }
     delete_brain = Cart.delete_brain(data)
+    return redirect('/cart')
+
+@app.route('/update_cart/<int:brain_model_id>', methods=['POST'])
+def update_cart(brain_model_id):
+    if "user_id" not in session:
+        return redirect('/createaccount')
+    quantity = request.form.get('quantity', '')
+    if not quantity.isdigit() or int(quantity) < 1:
+        flash('Quantity must be a whole number of 1 or more.')
+        return redirect('/cart')
+    data = {
+        'user_id': session['user_id'],
+        'brain_model_id': brain_model_id,
+        'quantity': quantity
+    }
+    Cart.update_quantity(data)
     return redirect('/cart')

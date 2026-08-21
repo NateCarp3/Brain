@@ -38,7 +38,10 @@
             <h3>Price ${{brain.price}}0</h3>
             <h3>Color: {{brain.color}}</h3>
             <h3>Quantity:</h3>
-            <input type="number" placeholder="{{brain.quantity}}" class="quant">
+            <form action="/update_cart/{{brain.id}}" method="POST" class="quant_form">
+                <input type="number" name="quantity" value="{{brain.quantity}}" min="1" class="quant">
+                <button type="submit" class="update_btn">Update</button>
+            </form>
             <br>
             <a class="delete" href="/delete/{{brain.id}}">Delete Brain</a>
         </div>

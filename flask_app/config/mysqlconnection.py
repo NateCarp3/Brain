@@ -9,12 +9,14 @@ class MySQLConnection:
         # production, set them as environment variables on the host.
         connect_kwargs = dict(
             host = os.environ.get('DB_HOST', 'localhost'),
+            port = int(os.environ.get('DB_PORT', '3306')),
             user = os.environ.get('DB_USER', 'root'),
             password = os.environ.get('DB_PASSWORD', ''),
             db = db,
             charset = 'utf8mb4',
             cursorclass = pymysql.cursors.DictCursor,
             autocommit = True,
+            connect_timeout = 10,
         )
         # Managed MySQL providers (e.g. Aiven) require an SSL connection.
         # Set DB_SSL_CA to the path of the downloaded CA certificate to

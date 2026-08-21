@@ -1,0 +1,394 @@
+body {
+    background-color: black;
+    padding: 20px;
+}
+.content
+{
+    padding: 110px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    border-radius: 30px ;
+    border-width: 10px;
+    margin: 50px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/static/img/starz.jpg');
+}
+.fa.fa-home{
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: blanchedalmond;
+    background-color: black;
+    transform: translate(300px, 0px);
+
+}
+#middle_img {
+    width: 300px;
+    transform: translate(0px, 50px);
+}
+.btn {
+    background-color: black;
+}
+.heading
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-bottom: 100px;
+    border-style: double;
+    border-width: 20px;
+    border-color: blanchedalmond;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px;
+}
+
+.usetot{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    color: blanchedalmond;
+    width: fit-content;
+    height: 35px;
+    padding: 15px;
+    display: flex;
+}
+
+.bel{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.nifti{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+    border-width: 5px;
+    width: 200px;
+    height: 70px;
+    padding: 7px;
+}
+.buymodel{
+    transform: translate(0px, 35px);
+}
+.aboutus {
+    transform: translate(0px, 35px)
+}
+.lab {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+.here{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+.text, .numbertext
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    text-align: center;
+    color: blanchedalmond;
+    margin: 15px;
+}
+.selections
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin: auto;
+    width: 300px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.price
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin: auto;
+    width: 300px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.bm
+{
+    width: 300px;
+}
+.phases
+{
+    border-style: inset;
+    background-color: black;
+    border-width: 10px;
+    border-color: blanchedalmond;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.toprow
+{
+    display: flex;
+    margin-bottom: 100px;
+}
+.tableHead
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+.tab
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.table
+{
+    margin-bottom: 50px;
+}
+.r1
+{
+    padding: 10px;
+    margin-left: 10px;
+}
+.model_img_bottom
+{
+    height: 350px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.model_img_top
+{
+    height: 350px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/* Footer */
+.footer {
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.abs {
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.h-8 {
+    width: 50px;
+    height: 50px;
+    color: blanchedalmond;
+    transform: translate(0px, -53px);
+}
+.h-7 {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transform: translate(-35px, -27px);
+    color: black;
+}
+.foot_img_link {
+    color: black;
+}
+.foot_link {
+    font-size: 25px;
+    color: blueviolet;
+}
+h4 {
+    font-size: 30px;
+}
+.btn {
+    background-color: black;
+}
+.slide_pic
+{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brain_model_top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.brain_model_mid
+{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.check
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    font-size: 15px;
+    background-color: black;
+    color: blanchedalmond;
+    height: fit-content;
+    margin-top: 10px;
+}
+.quant
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    height: fit-content;
+}
+.uni
+{
+    width: 100px;
+}
+#phrozen
+{
+    width: 300px;
+    margin-top: 100px;
+}
+#flash
+{
+    width: 300px;
+    margin-top: 100px;
+}
+.secondrow
+{
+    display: flex;
+    justify-content: space-between;
+}
+.table
+{
+    left: 100px;
+    margin-top: 125px;
+}
+select
+{
+    text-align-last: center;
+    direction: ltr;
+}
+
+.link{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.ms{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.user{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+
+.tut{
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-right: 20px;
+    transform: translate(0px, 5px);
+    font-size: 20px;
+}
+.shop{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+#pink_check {
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    font-size: 15px;
+    background-color: black;
+    color: blanchedalmond;
+    height: fit-content;
+    margin-top: 15px;
+}
+.container {
+    height: 530px;
+    width: 400px;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blanchedalmond;
+    border: 7px inset blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+.footer_container {
+    padding-bottom: 50px;
+}
+.top {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.quantity {
+    margin-bottom: 15px;
+}
+.radio {
+    margin-bottom: 10px;
+}
+.model_price {
+    margin-bottom: 10px;
+}

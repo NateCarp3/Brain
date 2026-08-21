@@ -1,0 +1,462 @@
+body {
+    background-color: black;
+}
+.content{
+    padding: 110px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    border-radius: 30px ;
+    border-width: 10px;
+    height: 100%;
+    margin: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/static/img/starz.jpg');
+
+}
+.start
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.check
+{
+    border-style: solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px blanchedalmond inset;
+    font-size: 25px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+#message {
+    transform: translate(0px, -25px);
+}
+h4 {
+    font-size: 25px;
+}
+.h-7 {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transform: translate(-35px, -27px);
+
+}
+ul {
+    transform: translate(-50px, 0px);
+    list-style: none;
+}
+.nathan {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/* Footer */
+.footer {
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.head{
+    font-size: 2cm;
+    text-align: center;
+    border-style: double;
+    border-width: 20px;
+    border-color: blanchedalmond;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 150px;
+
+}
+.heading {
+    transform: translate(0px, -35px);
+}
+
+.title_subtitle {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 50px;
+    border: blanchedalmond 5px inset;
+    width: 450px;
+    height: 250px;
+    transform: translate(0px, 50px);
+
+}
+.tit {
+    font-size: 30px;
+    text-align: center;
+}
+.sub {
+    font-size: 20px;
+    text-align: center;
+}
+.pics{
+    display: flex;
+    transform: translate(0, -30px);
+}
+.mySlides {
+    display: none;
+}
+.head {
+    display: flex;
+}
+.light {
+    width: 150px;
+    transform: translate(-20px, 100px);
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+#superBrain {
+    transform: translate(-150px, 150px);
+}
+#s1, #s2, #s4{
+    width: 600px;
+}
+#s6 {
+    width: 400px;
+}
+#s7 {
+    width: 400px;
+}
+#s8 {
+    width: 600px;
+}
+#s3 {
+    height: 500px;
+    width: 350px;
+}
+.why {
+    color: blanchedalmond;
+    padding: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translate(65px, 0px);
+
+
+}
+.head1 {
+    transform: translate(-150px, 0px);
+    background-color: black;
+    border: blanchedalmond 5px inset;
+    padding: 50px;
+}
+.list {
+    font-size: 20px;
+    background-color: black;
+    border: blanchedalmond 5px inset;
+    padding: 20px;
+}
+#s5 {
+    height: 500px;
+    width: 400px;
+}
+.nifti{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    width: 200px;
+    height: 70px;
+    padding: 7px;
+}
+.usetot{
+    background-color: black;
+    border-style: inset;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    width: fit-content;
+    height: 35px;
+    padding: 15px;
+    display: flex;
+}
+
+.toprow{
+    display: flex;
+    align-items:flex-start;
+    margin-left: 150px;
+    transform: translate(0, -60px);
+}
+
+.link{
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-style: inset;
+    border-width: 5px;
+    padding: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.lab {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+.uplink{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    padding: 30px;
+    font-size: 20px;
+    margin-left: 400px;
+}
+.tut{
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-right: 20px;
+    transform: translate(0px, 5px);
+    font-size: 20px;
+}
+
+.ms{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.title{
+    display: flex;
+}
+.mid{
+    transform: translate(200px, -65px);
+    justify-content: space-evenly;
+}
+.user{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+.update{
+    transform: translate(-1300px, 100px);
+}
+.here{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 30px;
+}
+.below{
+    background-color: black;
+    border: blanchedalmond 1px inset;
+    width: 200px;
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(1000px, -115px);
+}
+.shopfig{
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.ulab{
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.shop{
+    width: 50px;
+    height: 50px;
+    transform: translate(0px, -10px);
+}
+.bel{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.pics1{
+    transform: translate(-50px);
+}
+.buymodel{
+    transform: translate(0px, 35px);
+}
+.aboutus {
+    transform: translate(0px, 35px)
+}
+.undernav {
+    display: flex;
+    justify-content: center;
+}
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    padding: 50px;
+    border: blanchedalmond 7px inset;
+    transform: translate(-100px, 0px);
+}
+.container {
+    padding-bottom: 50px;
+}
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+.prev {
+    transform: translate(-45px, 0px);
+}
+.welcome {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: blanchedalmond;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    font-size: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    transform: translate(600px, -40px);
+    margin-bottom: 50px;
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+    
+  /* Caption text */
+    .text {
+    color: blanchedalmond;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    transform: translate(-50px, 0px);
+    margin-top: 25px;
+    }
+  /* Number text (1/3 etc) */
+    .numbertext {
+    color: blanchedalmond;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    #start {
+        width: 60px;
+        font-size: 15px;
+        transform: translate(0px, 20px);
+        height: 25px;
+        padding-bottom: 15px;
+    }
+    #logout {
+        width: 60px;
+        font-size: 15px;
+        transform: translate(0px, 20px);
+        height: 25px;
+        padding: 15px;
+
+    }
+    .abs {
+        width: 250px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    .h-8 {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+  /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+    
+  /* Fading animation */
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 2}
+    }
+
+    .foot_link {
+        font-size: 25px;
+        color: blueviolet;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    .foot_img_link {
+        color: black;
+    }

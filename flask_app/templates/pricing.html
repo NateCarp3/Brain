@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='materials.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pricing</title>
+</head>
+    <body class="bod">
+        <div class="content">
+            <div class="heading">
+                <!--Title of the website-->
+                PRICING
+                <a href="/" class="btn">
+                    <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+                </a>
+            </div>
+            <div class="bel">
+                <div class="nifti">
+                    <label class="lab">Upload .NIFTI File </label>
+                    <a href="https://drive.google.com/drive/folders/1lGyGDTjAeul9Q9uzqi_S9wUjp4TjOcxP?usp=sharing" class="here" target="_blank">HERE</a>
+                </div>
+                <div class="buymodel">
+                    <a href="/buyModel" class="link">BUY MODEL</a>
+                </div>
+                <div class="aboutus">
+                    <a href="/aboutus" class="ms">ABOUT US</a>
+                </div>
+                <div class="usetot">
+                    <img src="{{url_for('static', filename='img/user.jpg')}}" alt="" class="user">
+                    <a href="/createaccount" target="_blank" class="tut">{{session.first_name}}</a>
+                    <img src="{{url_for('static', filename='img/shop.jpg')}}" alt="" class="shop">
+                    <a href="/cart" class="tut">Cart</a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="toprow">
+                    <div class="tableHead">Material</div>
+                    <div class="tableHead">Price per Model</div>
+                </div>
+                <div class="toprow">
+                    <div class="tab">Resin</div>
+                    <div class="tab">$10.00</div>
+                </div>
+                <div class="toprow">
+                    <div class="tab">PLA</div>
+                    <div class="tab">$5.00</div>
+                </div>
+            </div>
+            <div class="mat">
+                Pricing is per printed model and varies by material. Head over to
+                <a href="/buyModel" style="color: blanchedalmond;">Buy Model</a>
+                to choose your color, infill, and quantity.
+            </div>
+        </div>
+    </body>
+</html>

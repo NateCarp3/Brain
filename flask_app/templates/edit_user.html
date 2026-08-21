@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='edit_user.css') }}">
+    <title>User Info</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="user_inf">Edit User Info</h1>
+            <a class="btn" href="/" >
+                <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+            </a>
+        </div>
+        <div class="edit_info">
+            <form action="/edit_user_info" method="POST">
+            <input type="hidden" name="user_id" value="{{session.user_id}}">
+            <div class="fname">
+                <label>First Name:</label>
+                <input type="text" name="first_name" value="{{edit_user.first_name}}">
+            </div>
+            <div class="lname">
+                <label>Last Name:</label>
+                <input type="text" name="last_name" value="{{edit_user.last_name}}">
+            </div>
+            <div class="email">
+                <label>Email:</label>
+                <input type="text" name="email" value="{{edit_user.email}}">
+            </div>
+            <input type="submit" value="Submit" class="check">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

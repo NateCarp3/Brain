@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='show_user.css') }}">
+    <title>User Info</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="user_inf">User Info</h1>
+            <a class="btn" href="/" >
+                <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+            </a>
+        </div>
+        <div class="info">
+            {%for use in user%}
+            <h2>First Name: {{use.first_name}}</h2>
+            <h2>Last Name: {{use.last_name}}</h2>
+            <h2>Email: {{use.email}}</h2>
+            {%endfor%}
+            <a href="/edit_user/{{session.user_id}}" class="edit">
+                Edit User
+            </a>
+            <a href="/delete_user/{{session.user_id}}" class="edit">
+                Delete User
+            </a>
+        </div>
+    </div>
+</body>
+</html>

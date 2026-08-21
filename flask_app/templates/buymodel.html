@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='buymodel.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Buy Model</title>
+</head>
+<body>
+    <div class="content">
+        <div class="heading">
+        <!--Title of the website-->
+            BUY MODEL
+            <a class="btn" href="/" >
+                <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+            </a>
+        </div>
+        <div class="bel">
+            <div class="nifti">
+                <label for="mriUpload" class="lab">Upload .NIFTI File </label>
+                <a href="https://drive.google.com/drive/folders/1lGyGDTjAeul9Q9uzqi_S9wUjp4TjOcxP?usp=sharing" class="here" target="_blank">HERE</a>
+            </div>
+            <div class="buymodel">
+                <a href="/buyModel" class="link">BUY MODEL</a>
+            </div>
+            <div class="aboutus">
+                <a href= "/aboutus" class="ms">ABOUT US</a>
+            </div>
+            <div class="usetot">
+                <img src="{{url_for('static', filename='img/user.jpg')}}" alt="" class="user">
+                <a href="/createaccount" target="_blank"class="tut">{{session.first_name}}</a>
+                <img src="{{url_for('static', filename='img/shop.jpg')}}" alt="" class="shop">
+                <a href="/cart"class="tut">Cart</a>
+            </div>
+        </div>
+        <div class="brain_model_top">
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="1" name="brain_model_id">
+                <div class="container">
+                    <div class="top">Pink Resin</div>
+                    <img src="{{url_for('static', filename='img/Resin(Pink).jpg')}}" class="model_img_top" alt="">
+                    <div class="model_price">$10.00</div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity"><br>
+                    </div>
+                    <button id="pink_check">ADD TO CART</button>
+                </div>
+            </form>
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="2" name="brain_model_id">
+                <div class="container">
+                    <div class="top">White Resin</div>
+                    <img src="{{url_for('static', filename='img/Resin(White).jpg')}}" class="model_img_top" alt="">
+                    <div class="model_price">$10.00</div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity"><br>
+                        <button class="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="4" name="brain_model_id">
+                <div class="container">
+                    <div class="top">Black PLA</div>
+                    <img src="{{url_for('static', filename='img/PLA(Black).jpg')}}" class="model_img_top" alt="">
+                    <div class="model_price">$5.00</div>
+                    <div class="radio">
+                        <input type="radio" value="Solid" name="infill">Solid
+                        <input type="radio" value="Lattice" name="infill">Lattice
+                    </div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity"><br>
+                        <button class="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="brain_model_mid">
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="7" name="brain_model_id">
+                <div class="container">
+                    <div class="top">Blue PLA</div>
+                    <img src="{{url_for('static', filename='img/PLA(Blue).jpg')}}" class="model_img_bottom" alt="">
+                    <div class="model_price">$5.00</div>
+                    <div class="radio">
+                        <input type="radio" value="Solid" name="infill">Solid
+                        <input type="radio" value="Lattice" name="infill">Lattice
+                    </div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity">
+                        <br>
+                        <button class="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="5" name="brain_model_id">
+                <div class="container">
+                    <div class="top">White PLA</div>
+                    <img src="{{url_for('static', filename='img/PLA(White).jpg')}}" class="model_img_bottom" alt="">
+                    <div class="model_price">$5.00</div>
+                    <div class="radio">
+                        <input type="radio" value="Solid" name="infill">Solid
+                        <input type="radio" value="Lattice" name="infill">Lattice
+                    </div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity">
+                        <br>
+                        <button class="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+            <form action="/add_cart" method = "POST" class="brain_model_form">
+                <input type="hidden" value="9" name="brain_model_id">
+                <div class="container">
+                    <div class="top">Clear PLA</div>
+                    <img src="{{url_for('static', filename='img/PLA(Clear-Pink).jpg')}}" class="model_img_bottom" alt="">
+                    <div class="model_price">$5.00</div>
+                    <div class="radio">
+                        <input type="radio" value="Solid" name="infill">Solid
+                        <input type="radio" value="Lattice" name="infill">Lattice
+                    </div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #" name="quantity">
+                        <br>
+                        <button class="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+{#
+            {%for model in brain%}
+            <form action="">
+                <div class="container">
+                    <div class="top">{{model.color}}</div>
+                    <img class="{{model.img_name}}" alt="">
+                    <div class="model_material">
+                        {{model.material}}
+                    </div>
+                    <div class="model_price">{{model.price}}</div>
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <input type="number" class="uni" placeholder="ENTER #">
+                        <br>
+                        <button id="check">ADD TO CART</button>
+                    </div>
+                </div>
+            </form>
+            {%endfor%}
+            #}
+        </div>
+    </div>
+    <div class="footer_container">
+        <!--footer-->
+        <footer class="footer">
+        <!--Logo and social links container-->
+        <div class="row">
+            <!--Logo-->
+            <div>
+                <img src="{{url_for('static', filename='img/abs.png')}}" class="abs">
+            </div>
+            <div class="footer-col">
+                <h4>ABS</h4>
+                <div class="col_items">
+                    <a href="#" class="foot_link">Home</a>
+                </div>
+                <div class="col_items">
+                    <a href="#" class="foot_link">Buy Model</a>
+                </div>
+                <div class="col_items">
+                    <a href="#" class="foot_link">About Us</a>
+                </div>
+                <div class="col_items">
+                    <a href="#" class="foot_link">Login/Registration</a>
+                </div>
+                <div class="col_items">
+                    <a href="#" class="foot_link">Cart</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="col_items">
+                    <a href="#" class="foot_img_link">
+                        <img src="{{url_for('static', filename='img/youtube.jpg')}}" alt="" class="h-7">
+                    </a>
+                    <a href="#" class="foot_img_link">
+                        <img src="{{url_for('static', filename='img/twitter.jpg')}}" alt="" class="h-7">
+                    </a>
+                    <a href="#" class="foot_img_link">
+                        <img src="{{url_for('static', filename='img/instagram.png')}}" alt="" class="h-8">
+                    </a>
+                </div>
+                <!--Input Container-->
+                <div>
+                    <p class="nathan">Built and Designed by Nathan Carpenter</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <div class="col_item">
+                    <a href="#" class="foot_link">FAQ</a>
+                </div>
+                <div class="col_item">
+                    <a href="#" class="foot_link">Shipping</a>
+                </div>
+                <div class="col_item">
+                    <a href="#" class="foot_link">Returns</a>
+                </div>
+                <div class="col_item">
+                    <a href="#" class="foot_link">Order Status</a>
+                </div>
+                <div class="col_item">
+                    <a href="#" class="foot_link">Payment Options</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+{#
+<div class="toprow">
+    <div class="price">
+        <h1>Model Price:</h1>
+        <h1>Resin: $10</h1>
+        <h1>PLA: $5</h1>
+    </div>
+    <div class="images">
+        <img src="" alt="" id="middle_img">
+        <label for="">QUANTITY</label>
+        <input type="number" class="uni" placeholder="ENTER #">
+        <button id="check">ADD TO CART</button>
+
+    </div>
+    <div class="selections">
+        <form name="formid">
+        <input type="hidden" name="user_id" value="{{session.user_id}}">
+        <label>SELECT YOUR MATERIAL:    </label>
+        <select id="matselect" onchange="doDat()">
+            <option value="">--------------------</option>
+            <option value="Resin(Pink)" class="m">Resin (Pink)</option>
+            <option value="Resin(White)" class="m">Resin (White)</option>
+            <option value="PLA(Clear-Pink)" class="m">PLA (Clear & Pink)</option>
+            <option value="PLA(Black)" class="m">PLA (Black)</option>
+            <option value="PLA(White)" class="m">PLA (White)</option>
+            <option value="PLA(Blue)" class="m">PLA (Blue)</option>
+        </select>
+        <p id="lbl"></p>
+        <label class="fillab">SELECT YOUR INFILL:  </label>
+        <br>
+        <br>
+        <br>
+        <input type="radio" value="Solid" name="infill">Solid
+        <input type="radio" value="Lattice" name="infill">Lattice
+        <p id="lbl3"></p>
+        <br>
+        <label for="">QUANTITY</label>
+        <input type="number" class="uni" placeholder="ENTER #">
+        <button id="check">ADD TO CART</button>
+        </form>
+        </div>
+    </div>
+    #}
+</body>
+<script>
+    function getPic() {
+        var x = document.getElementById(',matselect').value;
+        if (x == "PLA(Black)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/PLA(Black).jpg')}}")
+        }
+        if (x == "PLA(Clear-Pink)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/PLA(Clear-Pink).jpg')}}")
+        }
+        if (x == "Resin(White)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/Resin(White).jpg')}}")
+        }
+        if (x == "Resin(Pink)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/Resin(Pink).jpg')}}")
+        }
+        if (x == "PLA(White)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/PLA(White).jpg')}}")
+        }
+        if (x == "PLA(Blue)") {
+            document.getElementById('middle_img').setAttribute("src", "{{url_for('static', filename='img/PLA(Blue).jpg')}}")
+        }
+        
+    }
+    function doDat() {
+        getPic()
+        var x = document.getElementById("matselect").value;
+        document.getElementById("lbl").innerHTML = "You selected: " + x;
+    }
+</script>
+</html>

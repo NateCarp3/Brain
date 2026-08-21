@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutus.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+    <body class="bod">
+        <div class="content">
+            <div class="heading">
+                <!--Title of the website-->
+                ABOUT US
+                <a href="/" class="btn">
+                    <img src="{{url_for('static', filename='img/home.jpg')}}" class="fa fa-home">
+                </a>
+                </div>
+                <div class="bel">
+                    <div class="nifti">
+                        <label class="lab">Upload .NIFTI File </label>
+                        <a href="https://drive.google.com/drive/folders/1lGyGDTjAeul9Q9uzqi_S9wUjp4TjOcxP?usp=sharing" class="here" target="_blank">HERE</a>
+                    </div>
+                    <div class="buymodel">
+                        <a href="/buyModel" class="link">BUY MODEL</a>
+                    </div>
+                    <div class="aboutus">
+                        <a href= "/aboutus" class="ms">ABOUT US</a>
+                    </div>
+                    <div class="usetot">
+                        <img src="{{url_for('static', filename='img/user.jpg')}}" alt="" class="user">
+                        <a href="/createaccount" target="_blank"class="tut">{{session.first_name}}</a>
+                        <img src="{{url_for('static', filename='img/shop.jpg')}}" alt="" class="shop">
+                        <a href="/cart"class="tut">Cart</a>
+                    </div>
+                </div>
+                <div id="team">
+                    <img src="{{url_for('static', filename='img/team.png')}}" alt="" width="800" class="center">
+                </div>
+                <div class="links">
+                    <div class="tutorial">
+                        <h1>TUTORIAL:</h1>
+                        <a href="{{url_for('static', filename='docs/BrainModTut.pdf')}}">Full Brain Printing Tutorial</a>
+                    </div>
+                    <div class="pres">
+                        <h1>PRESENTATIONS:</h1>
+                        <div class="pres1">
+                            <a href="{{url_for('static', filename='docs/Presentation1.pdf')}}">Presentation 1</a>
+                        </div>
+                        <div class="pres2">
+                            <a href="{{url_for('static', filename='docs/Presentation2.pdf')}}">Presentation 2</a>
+                        </div>
+                        <div class="pres3">
+                            <a href="{{url_for('static', filename='docs/Presentation3.pdf')}}">Presentation 3</a>
+                        </div>
+                        <div class="pres4">
+                            <a href="{{url_for('static', filename='docs/Presentation4.pdf')}}">Presentation 4</a>
+                        </div>
+                        <div class="pres5">
+                            <a href="{{url_for('static', filename='docs/Presentation5.pdf')}}">Presentation 5</a>
+                        </div>
+                        <div class="pres6">
+                            <a href="{{url_for('static', filename='docs/Presentation6.pdf')}}">Presentation 6</a>
+                        </div>
+                    </div>
+                    <div class="rep">
+                        <h1>REPORTS:</h1>
+                        <div class="rep1">
+                            <a href="{{url_for('static', filename='docs/Report1.pdf')}}">Report 1</a>
+                        </div>
+                        <div class="rep2">
+                            <a href="{{url_for('static', filename='docs/Report2.pdf')}}">Report 2</a>
+                        </div>
+                        <div class="rep3">
+                            <a href="{{url_for('static', filename='docs/Report3.pdf')}}">Report 3</a>
+                        </div>
+                        <div class="rep4">
+                            <a href="{{url_for('static', filename='docs/Report4.pdf')}}">Report 4</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="{{url_for('static', filename='img/freesurfer.png')}}" class="slide_pic">
+                        <div class="text">Freesurfer GUI View</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="{{url_for('static', filename='img/meshlab.png')}}" class="slide_pic">
+                        <div class="text">Meshlab Model View</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="{{url_for('static', filename='img/brainmodel.jpeg')}}" class="slide_pic">
+                        <div class="text">Resin Model</div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                </div>
+                <div class="para">
+                    <p>&emsp; Millions of MRI images are taken of the brain every year, all over the world. From detecting brain tumors to severe concussions, MRI’s are an incredible tool in the medical community to help diagnose patients with head-related issues. But how many of these patients really understand what is going inside their brain? Of course, not everybody can go through all of the schooling to get their doctorate in the medical field, yet, when something happens, we are just expected to visualize and understand exactly what is going on. This can cause the patient to become extremely overwhelmed, as all they know is that they will have a crucial surgery performed on their brain.</p>
+                    <p>&emsp; Hello, we are Automatic Brain Segmentation and we are a group of 5 mechanical engineers with just the solution to this issue. Our team has designed a service that allows our customers to upload a brain MRI scan and automatically receive a 3D printed model of that brain. It works by utilizing a software that converts the MRI slices into a rough 3D model of the brain, then uses a different software to smooth it and enhance the model accuracy. The model is then converted to a file which can be accepted by a 3D printer and printed. Our service leverages these technologies with the addition of our own code to make them run automatically as well as a user interface that ties it all together. When we send the model back to the customer, they will have a tangible representation of their brain, which a doctor can then use to convey information on possible diagnoses in a way that is much easier to understand and reduce confusion within the patient.</p>
+                    <p>&emsp;  Current competitors are mainly individuals with a high level of expertise and manually generate these models causing unreasonably long wait times to create and deliver the models. Unlike the current market, our service requires a much lower level of expertise, and can produce a model in a number of hours rather than weeks. Additionally, the prices of our competition are very costly, costing upwards of 250 dollars per model. As our process is automatic and produces high-quality models, this allows for the feasibility of bulk orders to be produced and delivered in a timely-manner, an aspect the current market does not have. Team Automatic Brain Segmentation asks for $25000 for a 5% stake in the product. Consider investing to help advance the medical field for both doctors and patients.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--footer-->
+            <footer class="footer">
+            <!--Logo and social links container-->
+            <div class="row">
+                <!--Logo-->
+                <div>
+                    <img src="{{url_for('static', filename='img/abs.png')}}" class="abs">
+                </div>
+                <div class="footer-col">
+                    <h4>ABS</h4>
+                    <div class="col_items">
+                        <a href="#" class="foot_link">Home</a>
+                    </div>
+                    <div class="col_items">
+                        <a href="#" class="foot_link">Buy Model</a>
+                    </div>
+                    <div class="col_items">
+                        <a href="#" class="foot_link">About Us</a>
+                    </div>
+                    <div class="col_items">
+                        <a href="#" class="foot_link">Login/Registration</a>
+                    </div>
+                    <div class="col_items">
+                        <a href="#" class="foot_link">Cart</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="col_items">
+                        <a href="#" class="foot_img_link">
+                            <img src="{{url_for('static', filename='img/youtube.jpg')}}" alt="" class="h-7">
+                        </a>
+                        <a href="#" class="foot_img_link">
+                            <img src="{{url_for('static', filename='img/twitter.jpg')}}" alt="" class="h-7">
+                        </a>
+                        <a href="#" class="foot_img_link">
+                            <img src="{{url_for('static', filename='img/instagram.png')}}" alt="" class="h-8">
+                        </a>
+                    </div>
+                    <!--Input Container-->
+                    <div>
+                        <p class="nathan">Built and Designed by Nathan Carpenter</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <div class="col_item">
+                        <a href="#" class="foot_link">FAQ</a>
+                    </div>
+                    <div class="col_item">
+                        <a href="#" class="foot_link">Shipping</a>
+                    </div>
+                    <div class="col_item">
+                        <a href="#" class="foot_link">Returns</a>
+                    </div>
+                    <div class="col_item">
+                        <a href="#" class="foot_link">Order Status</a>
+                    </div>
+                    <div class="col_item">
+                        <a href="#" class="foot_link">Payment Options</a>
+                    </div>
+                </div>
+            </div>
+            </footer>
+        </div>
+    </body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 7 seconds
+}
+</script>
+    </body>
+</html>

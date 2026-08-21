@@ -1,0 +1,13 @@
+# Environment / secrets
+.env
+*.pem
+
+# Database dumps — never belong in source control
+*.sql
+
+# Python
+__pycache__/
+*.pyc
+venv/
+instance/
+*.sqlite3

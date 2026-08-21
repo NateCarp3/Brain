@@ -39,6 +39,17 @@ body {
 }
 .cart_info{
     display: flex;
+    justify-content: center;
+}
+.empty_cart {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 7px groove blanchedalmond;
+    padding: 20px 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 .cart_brains {
     background-color: black;

@@ -23,7 +23,9 @@
         </a>
     </div>
     {%if cart.brains|length == 0:%}
-    <p>Cart is Empty</p>
+    <div class="cart_info">
+        <p class="empty_cart">Cart is Empty</p>
+    </div>
     {%else%}
     <div class="header">
         Brain Models:
@@ -41,8 +43,8 @@
             <a class="delete" href="/delete/{{brain.id}}">Delete Brain</a>
         </div>
         {%endfor%}
-    {%endif%}
     </div>
+    {%endif%}
     <div class="checkout">
         <a href="/">Check Out</a>
     </div>

@@ -38,6 +38,7 @@ class Cart:
                 'updated_at': row['brain_model.updated_at']
             }
             brain = Brain(brain_data)
+            brain.quantity = row['quantity']
             user.brains.append(brain)
         return user
 

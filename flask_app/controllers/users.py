@@ -78,10 +78,14 @@ def logout():
 
 @app.route('/add_cart', methods= ["POST"])
 def cart_route():
+    quantity = request.form.get('quantity', '')
+    if not quantity.isdigit() or int(quantity) < 1:
+        flash('Please enter a quantity of 1 or more.')
+        return redirect('/buyModel')
     data = {
             'user_id': session['user_id'],
             'brain_model_id': request.form['brain_model_id'],
-            'quantity': request.form['quantity']
+            'quantity': quantity
     }
     session['cart_id'] = data['brain_model_id']
     print(data['brain_model_id'])

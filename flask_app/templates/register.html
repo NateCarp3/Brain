@@ -8,19 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .register {width: 350px; margin: auto; padding: 50px; border: groove blanchedalmond 3px; background-color: black; color: blanchedalmond}
+        .register {width: 90%; max-width: 350px; box-sizing: border-box; margin: auto; padding: 50px; border: groove blanchedalmond 3px; background-color: black; color: blanchedalmond}
         .content {font-family: "Lucida Console", "Courier New", monospace; padding: 110px; border-style: groove; border-color: blanchedalmond;
-        border-radius: 30px ; border-width: 10px;background-position: center; background-repeat: no-repeat; background-image: url('/static/img/starz.jpg'); margin: 50px;}
+        border-radius: 30px ; border-width: 10px;background-position: center; background-repeat: no-repeat; background-image: url('/static/img/starz.jpg'); margin: 50px;
+        box-sizing: border-box; overflow-x: hidden;}
         body {background-color: black; padding: 20px;}
-        #emailHelp{color: blue;} 
-        .heading{font-size: 2cm; text-align: center; margin-bottom: 100px;
+        #emailHelp{color: blue;}
+        .heading{font-size: clamp(1.1rem, 5vw, 2cm); text-align: center; margin-bottom: 100px;
             border-style: double; border-width: 20px; border-color: blanchedalmond; background-color: black;
-            color: blanchedalmond; font-family: "Lucida Console", "Courier New", monospace; padding: 25px;}
-        .fa.fa-home{width: 70px; height: 70px; font-size: 50px; color: blanchedalmond; background-color: black; transform: translate(200px, 0px);}
+            color: blanchedalmond; font-family: "Lucida Console", "Courier New", monospace; padding: 15px 25px;
+            display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;}
+        .fa.fa-home{width: 70px; height: 70px; font-size: 50px; color: blanchedalmond; background-color: black; flex-shrink: 0;}
         .home_btn {background-color: black;}
         /* Footer */
-        .footer {background-color: black; color: blanchedalmond; margin: 0px; font-family: "Lucida Console", "Courier New", monospace; display: flex; justify-content: space-evenly;}
-        .contact_img {display: flex; justify-content: space-evenly;}
+        .footer {background-color: black; color: blanchedalmond; margin: 0px; font-family: "Lucida Console", "Courier New", monospace; display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 20px;}
+        .contact_img {display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 10px;}
         .abs {width: 250px; height: 200px; margin-top: 20px; border-radius: 50%;}
         .h-8 {width: 50px; height: 50px; color: blanchedalmond; transform: translate(-40px, 0px);}
         .h-7 {width: 100px; height: 100px; margin: 0; transform: translate(-55px, 0px);}
@@ -29,6 +31,13 @@
         #message {transform: translate(-35px, 0px);}
         .foot_img_link {color: black;}
         .footer_container {padding-bottom: 50px;}
+        @media (max-width: 900px) {
+            .content { padding: 40px 15px; margin: 15px; }
+        }
+        @media (max-width: 600px) {
+            .heading { padding: 15px; margin-bottom: 40px; }
+            .footer { justify-content: center; text-align: center; }
+        }
 
     </style>
 </head>

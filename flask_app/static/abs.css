@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('/static/img/starz.jpg');
+    box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 .start
@@ -66,14 +68,18 @@ ul {
 }
 .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 15px;
 }
 .contact_img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 10px;
 }
 .head{
-    font-size: 2cm;
+    font-size: clamp(1.1rem, 5vw, 2cm);
     text-align: center;
     border-style: double;
     border-width: 20px;
@@ -82,10 +88,14 @@ ul {
     color: blanchedalmond;
     font-family: "Lucida Console", "Courier New", monospace;
     display: flex;
-    padding: 0px 50px;
+    flex-wrap: wrap;
+    padding: 15px 30px;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 50px;
-    height: 150px;
+    height: auto;
+    min-height: 150px;
 
 }
 .heading {
@@ -96,11 +106,14 @@ ul {
     background-color: black;
     color: blanchedalmond;
     font-family: "Lucida Console", "Courier New", monospace;
-    padding: 50px;
+    padding: 30px;
     border: blanchedalmond 5px inset;
-    width: 450px;
-    height: 250px;
-    transform: translate(0px, 50px);
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    min-height: 250px;
+    box-sizing: border-box;
+    margin: 20px auto;
 
 }
 .tit {
@@ -136,48 +149,57 @@ img {
     transform: translate(-150px, 150px);
 }
 #s1, #s2, #s4{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 #s6 {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 #s7 {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 #s8 {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 #s3 {
-    height: 500px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 .why {
     color: blanchedalmond;
-    padding: 50px;
+    padding: 30px 15px;
     font-family: "Lucida Console", "Courier New", monospace;
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
-    transform: translate(65px, 0px);
 
 
 }
 .head1 {
-    transform: translate(-150px, 0px);
     background-color: black;
     border: blanchedalmond 5px inset;
-    padding: 50px;
+    padding: 30px;
 }
 .list {
     font-size: 20px;
     background-color: black;
     border: blanchedalmond 5px inset;
     padding: 20px;
+    max-width: 700px;
 }
 #s5 {
-    height: 500px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 .nifti{
     background-color: black;
@@ -299,7 +321,9 @@ img {
 }
 .bel{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 15px;
     margin-bottom: 100px;
 }
 .pics1{
@@ -317,12 +341,13 @@ img {
 }
 .slideshow-container {
     max-width: 600px;
+    width: 92%;
     position: relative;
     margin: auto;
     background-color: black;
-    padding: 50px;
+    padding: 30px 15px;
     border: blanchedalmond 7px inset;
-    transform: translate(-100px, 0px);
+    box-sizing: border-box;
 }
 .container {
     padding-bottom: 50px;
@@ -460,3 +485,16 @@ img {
     .foot_img_link {
         color: black;
     }
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+    .content { padding: 40px 15px; margin: 15px; }
+    .undernav { flex-direction: column; align-items: center; }
+    .slideshow-container { margin-top: 20px; }
+}
+@media (max-width: 600px) {
+    .head { padding: 15px; }
+    .why { margin-top: 60px; }
+    .head1 { padding: 20px; }
+    .row, .contact_img { justify-content: center; text-align: center; }
+}

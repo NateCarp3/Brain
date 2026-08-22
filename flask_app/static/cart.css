@@ -15,10 +15,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('/static/img/starz.jpg');
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .heading
 {
-    font-size: 2cm;
+    font-size: clamp(1.1rem, 5vw, 2cm);
     text-align: center;
     margin-bottom: 100px;
     border-style: double;
@@ -27,7 +29,12 @@ body {
     background-color: black;
     color: blanchedalmond;
     font-family: "Lucida Console", "Courier New", monospace;
-    padding: 25px;
+    padding: 15px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 .fa.fa-home{
     width: 70px;
@@ -35,10 +42,11 @@ body {
     font-size: 50px;
     color: blanchedalmond;
     background-color: black;
-    transform: translate(300px, 0px);
+    flex-shrink: 0;
 }
 .cart_info{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .empty_cart {
@@ -59,6 +67,10 @@ body {
     padding: 20px;
     margin: 20px;
 }
+.cart_brains img {
+    max-width: 100%;
+    height: auto;
+}
 .header {
     background-color: black;
     color: blanchedalmond;
@@ -66,6 +78,7 @@ body {
     border: 7px groove blanchedalmond;
     padding: 20px;
     width: fit-content;
+    max-width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -81,6 +94,8 @@ body {
     border: 7px groove blanchedalmond;
     padding: 20px;
     width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -93,6 +108,7 @@ body {
     border: 7px groove blanchedalmond;
     padding: 20px;
     width: fit-content;
+    max-width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -118,4 +134,13 @@ body {
 .update_btn:hover {
     background-color: blanchedalmond;
     color: black;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+    .container { padding: 40px 15px; margin: 15px; }
+}
+@media (max-width: 600px) {
+    .heading { padding: 15px; margin-bottom: 40px; }
+    .cart_brains { margin: 10px; width: 100%; max-width: 320px; box-sizing: border-box; }
 }
